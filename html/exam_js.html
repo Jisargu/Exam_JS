@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Exaemn JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../css/exam_js.css">
+  <script src="../js/exam_js.js"></script>
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--Primera fila-->
+    <div class="row text-center my-3">
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary ">
+          <div class="card-header altura_card_header">
+            <h6>Diferencias entre etiqueta &lt;p&gt; y etiqueta &lt;div&gt;</h6>
+          </div>
+          <div id="respuesta1" class="card-body bg-light altura_card_body invisible">
+            <p class="card-text text-justify  text-danger">La etiqueta &lt;p&gt; tiene un margen y formato predefinido mientras que la etiqueta &lt;div&gt; no tiene formato</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler1()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary">
+          <div class="card-header altura_card_header">
+            <h6>¿Qué es minificación de CSS?</h6>
+          </div>
+          <div id="respuesta2" class="card-body bg-light altura_card_body invisible">
+            <p class="card-text text-justify  text-danger">Sirve para comprimir un archivo CSS. Elimina espacios, agrupa redundancias y quita saltos de linea</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler2()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary">
+          <div class="card-header altura_card_header">
+            <h6>Menciona 3 librerías de Front-end</h6>
+          </div>
+          <div id="respuesta3" class="card-body bg-light altura_card_body invisible">
+            <img src="../img/materialize_google.png" alt="logo materialize" title="Materialize">
+            <img src="../img/foundation_zurb.png" alt="logo foundation" title="Foundation">
+            <img src="../img/bootstrap_twitter.png" alt="logo bootstrap" title="Bootstrap">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler3()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Segunda fila-->
+    <div class="row text-center my-3">
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary ">
+          <div class="card-header altura_card_header">
+            <h6>¿Por qué no usar WYSIWYG o CMS?</h6>
+          </div>
+          <div id="respuesta4" class="card-body bg-light altura_card_body invisible">
+            <p class="card-text text-justify  text-danger">Es poco profesional, tiene limitaciones como inclusión de JavaScript y el código es menos limpio.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler4()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary">
+          <div class="card-header altura_card_header">
+            <h6>¿cómo poner variables en CSS?</h6>
+          </div>
+          <div id="respuesta5" class="card-body bg-light altura_card_body invisible">
+            <p class="card-text text-justify  text-danger">:root { --color_principal : green; }</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler5()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-secondary">
+          <div class="card-header altura_card_header">
+            <h6>¿Qué es un preprocesador de CSS?</h6>
+          </div>
+          <div id="respuesta6" class="card-body bg-light altura_card_body invisible">
+            <p class="card-text text-justify text-danger"> Le da super poderes al CSS (extiende las funcionalidades de un CSS), permitiéndonos tener variables, funciones, mixins, reutilizar código y tener más flexibilidad al momento del desarrollo.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <button class="btn btn-primary mt-3" type="button" onclick="toggler6()">La respuesta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Tercera fila-->
+    <div class="row text-center my-3">
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary ">
+            <div class="card-header altura_card_header">
+              <h6>Menciona 2 preprocesadores de CSS</h6>
+            </div>
+            <div id="respuesta7" class="card-body bg-light altura_card_body invisible">
+              <img src="../img/sass_logo.png" alt="Sass logo" title="Sass">
+              <img src="../img/less_logo.jpg" alt="Less logo" title="Less">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler7()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary">
+            <div class="card-header altura_card_header">
+              <h6>Diferencia entre innerHTML y write</h6>
+            </div>
+            <div id="respuesta8" class="card-body bg-light altura_card_body invisible">
+              <p class="card-text text-justify  text-danger">Después de innerHTML va un igual para asignarle un valor. En write lleva el valor entre paréntesis</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler8()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary">
+            <div class="card-header altura_card_header">
+              <h6>¿Qué es una librería?</h6>
+            </div>
+            <div id="respuesta9" class="card-body bg-light altura_card_body invisible">
+                <p class="card-text text-justify  text-danger">Conjunto de instrucciones definidas para un fin o funcionalidad. Se puede usar u omitir sin efectos secundarios.</p> 
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler9()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--Cuarta fila-->
+    <div class="row text-center my-3">
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary ">
+            <div class="card-header altura_card_header">
+              <h6>En JavaScript ¿quée es getElementById?</h6>
+            </div>
+            <div id="respuesta10" class="card-body bg-light altura_card_body invisible">
+                <p class="card-text text-justify  text-danger">Se usa para obtener un elemento por su identificador (para decirle ¡hey tú! el que tiene este Id)</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler10()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary">
+            <div class="card-header altura_card_header">
+              <h6>Menciona 3 eventos para ejecutar una función en JavaScript</h6>
+            </div>
+            <div id="respuesta11" class="card-body bg-light altura_card_body invisible">
+              <ul class="text-danger text-left"><li>onclick: cuando das click.</li> <li>onload: cuando la página ha sido cargada</li> <li>onkeypress: cuando presionas una tecla.</li></ul>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler11()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card border-secondary">
+            <div class="card-header altura_card_header">
+              <h6>Diferencia entre JavaScript y Java</h6>
+            </div>
+            <div id="respuesta12" class="card-body bg-light altura_card_body invisible">
+                <p class="card-text text-justify  text-danger">Java es un lenguaje compilado multipropósito y JavaScript es un lenguaje interpretado para dar interactividad a páginas web.</p> 
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <button class="btn btn-primary mt-3" type="button" onclick="toggler12()">La respuesta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+
+</html>

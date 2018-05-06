@@ -1,0 +1,27 @@
+.invisible{
+    display: none;
+}
+.altura_card_header{
+    height: 70px;
+}
+.altura_card_body{
+    height: 150px;
+}
+.card-body img{
+    height: 3em;
+    width: 5em;
+}
+  
+@media only screen and (max-width: 767px) {
+    .altura_card_body {
+        height: 120px;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+    .altura_card_body {
+        height: 180px;
+        font-size: 0.8em;
+    }
+}
